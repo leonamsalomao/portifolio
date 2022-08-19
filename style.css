@@ -1,0 +1,75 @@
+/* Configurações Gerais */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-body: hsl(225, 4%, 39%);
+  --bg-portifolio: hsl(180, 2%, 11%);
+  --bg-portifolio2: hsl(0, 0%, 8%);
+
+  font-size: 62.5%;
+}
+
+body{
+  
+  font-family: 'Poppins', sans-serif;
+
+  background: var(--bg-body);
+  
+  width: 30rem;
+  margin: auto;
+
+}
+
+/* Header */
+
+#logo{
+  background-color: white;
+  position: relative;
+  padding: 12px;
+  display: inline-block;
+}
+
+#logo img{
+  width: 2.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1.5px;
+}
+
+nav ul{
+  background-color: var(--bg-portifolio2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 700px;
+  gap: 15px;
+
+}
+
+
+nav ul li{
+  list-style: none;
+  
+  display: flex;
+
+  position: relative;
+
+}
+
+nav ul li img{
+  width: 3rem;
+  background-color: aliceblue;
+}
+
+#perfil img{
+  width: 30rem;
+}
+
