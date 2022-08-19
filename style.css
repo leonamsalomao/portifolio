@@ -20,7 +20,7 @@ body{
 
   background: var(--bg-body);
   
-  width: 30rem;
+  width: 32rem;
   margin: 0 auto;
 
 }
@@ -92,7 +92,7 @@ svg:hover path{
 }
 
 #perfil{
-  width: 30rem;
+  width: 32rem;
   position: relative;
 }
 
@@ -137,7 +137,7 @@ svg:hover path{
 /* Skills */
 
 #skills{
-  width: 30rem;
+  width: 32rem;
   background: var(--bg-portifolio2);
 }
 
@@ -175,7 +175,7 @@ svg:hover path{
 }
 
 #softSkills{
-  width: 30rem;
+  width: 32rem;
   background: var(--bg-portifolio2);
 }
 
