@@ -21,55 +21,180 @@ body{
   background: var(--bg-body);
   
   width: 30rem;
-  margin: auto;
+  margin: 0 auto;
 
+}
+
+ul li{
+  list-style: none;
 }
 
 /* Header */
 
-#logo{
-  background-color: white;
-  position: relative;
-  padding: 12px;
-  display: inline-block;
+.container{
+  background-color: var(--bg-portifolio2);
+ 
+  display: flex;
+  align-items: center;
 }
 
+
+
+#sobre{
+  background-color: var(--bg-portifolio2);
+}
+
+
 #logo img{
-  width: 2.5rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 1.5px;
+  width: 6rem;
+  padding: 8px 0 8px 8px;
+  opacity: 75%;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+svg path{
+  fill: white;
 }
 
 nav ul{
-  background-color: var(--bg-portifolio2);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 700px;
-  gap: 15px;
-
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 
 nav ul li{
-  list-style: none;
-  
   display: flex;
-
-  position: relative;
-
 }
 
 nav ul li img{
   width: 3rem;
-  background-color: aliceblue;
 }
 
-#perfil img{
+svg{
+  width: 2rem;
+  height: 2rem;
+}
+
+svg:hover path{
+  fill: grey;
+}
+
+.active path{
+  fill: #fd731e;
+}
+
+#perfil{
   width: 30rem;
+  position: relative;
+}
+
+#fotoPerfil{
+  width: 30rem;
+}
+
+#nomePerfil{
+  position: absolute;
+  bottom: 20px;
+  left: 17%;
+  width: 20rem;
+
+}
+
+/* Sobre */
+
+#sobre h2{
+  color: white;
+  padding: 20px 0 0 20px;
+  font-size: 24px;
+}
+
+#sobre h4{
+  color: #fd731e;
+  padding: 20px;
+  font-size: 12px;
+}
+
+#sobre h4 span{
+  color: var(--bg-body);
+  font-style: italic;
+}
+
+#sobre p{
+  color: white;
+  padding: 30px;
+  font-size: 16px;
+  padding-bottom: 60px;
+}
+
+/* Skills */
+
+#skills{
+  width: 30rem;
+  background: var(--bg-portifolio2);
+}
+
+#skills h2{
+  color: white;
+  padding: 20px 0 0 20px;
+  font-size: 24px;
+}
+
+#skills p{
+  color: white;
+  padding: 30px;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+
+#hardSkills ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#hardSkills ul li img{
+  width: 120px;
+  padding: 10px;
+}
+
+#hardSkills ul li span{
+  color: white;
+  font-size: 18px;
+  
+}
+
+#softSkills{
+  width: 30rem;
+  background: var(--bg-portifolio2);
+}
+
+#softSkills ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#softSkills ul li img{
+  width: 120px;
+  padding: 10px;
+}
+
+#softSkills ul li span{
+  color: white;
+  font-size: 18px;
+  
 }
 
