@@ -1,12 +1,12 @@
-/* Configurações Gerais */
+/*======== Configurações Gerais =======*/
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --bg-body: hsl(225, 4%, 39%);
   --bg-portifolio: hsl(180, 2%, 11%);
   --bg-portifolio2: hsl(0, 0%, 8%);
@@ -14,7 +14,7 @@
   font-size: 62.5%;
 }
 
-body{
+body {
   
   font-family: 'Poppins', sans-serif;
 
@@ -25,221 +25,123 @@ body{
 
 }
 
-ul li{
+ul li {
   list-style: none;
 }
 
-/* Header */
-
 .container{
-  background-color: var(--bg-portifolio2);
- 
+  width: 32rem;
+  background: var(--bg-portifolio2);
+}
+
+svg path {
+  fill: #FFFFFF;
+}
+
+h2{
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  margin: 5rem 3rem 3rem;
+}
+
+
+
+
+/*======= Profile =======*/
+
+/*-------- Nav ----------*/
+
+.headerNav{
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-
-
-
-#sobre{
-  background-color: var(--bg-portifolio2);
+.headerNav nav{
+  display: flex;
 }
 
-
-#logo img{
+.logoSimple img{
   width: 6rem;
   padding: 8px 0 8px 8px;
-  opacity: 75%;
 }
 
 nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
-svg path{
-  fill: white;
-}
-
-nav ul{
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
   width: 100%;
 }
 
+/* ----------- Photo ------------*/
 
-nav ul li{
-  display: flex;
-}
-
-nav ul li img{
-  width: 3rem;
-}
-
-svg{
-  width: 2rem;
-  height: 2rem;
-}
-
-svg:hover path{
-  fill: grey;
-}
-
-.active path{
-  fill: #fd731e;
-}
-
-#perfil{
-  width: 32rem;
+.profilePhoto{
   position: relative;
 }
 
-#fotoPerfil{
+#profilePhoto{
   width: 32rem;
 }
 
-#nomePerfil{
+#nameFunction{
   position: absolute;
-  bottom: 20px;
-  left: 17%;
+  bottom: 2rem;
+  left: 18%;
   width: 20rem;
-
 }
 
-/* Sobre */
+/*------------ About -----------*/
 
-#sobre h2{
-  color: white;
-  padding: 20px 0 0 20px;
-  font-size: 24px;
-}
-
-#sobre h4{
+h4{
   color: #fd731e;
-  padding: 20px;
-  font-size: 12px;
+  font-size: 1.39rem;
+  margin: 0 3rem;
 }
 
-#sobre h4 span{
+h4 span{
   color: var(--bg-body);
   font-style: italic;
+  font-size: 1.4rem;
 }
 
-#sobre p{
-  color: white;
-  padding: 30px;
-  font-size: 16px;
-  padding-bottom: 60px;
-}
-
-/* Skills */
-
-.toggle {
-  background-color: var(--bg-portifolio);
-  color: rgb(255, 255, 255);
-
-  cursor: pointer;
-
-  padding: 1rem;
-  width: 100%;
-
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-  
-  border: 1px solid #fd731e;
-  border-radius: 2rem;
-}
-
-.active, .toggle:hover {
-  background-color: #fd731e;
-  border-radius: 0;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  color: #ffffff;
-  margin: -1rem 0 1rem 0;
+p{
+  color: #FFFFFF;
+  margin: 3rem 3rem 8rem;
 }
 
 
-#skills{
-  width: 32rem;
-  background: var(--bg-portifolio2);
-  display: flex;
-}
-
-#skills h2{
-  color: white;
-  padding: 20px 0 0 20px;
-  font-size: 24px;
-}
-
-#skills button h2{
-  margin: 0 -20px;
-  width: 5rem;
-}
-
-#skills p{
-  color: white;
-  padding: 30px;
-  font-size: 16px;
-  padding-bottom: 30px;
-}
+/*======= Skills =======*/
 
 
-#hardSkills ul li{
+/*-------- containerSkills -------*/
+
+/*------------ HardSkills ---------*/
+
+
+
+
+
+/*============= Footer ============*/
+.logo{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 20px;
 }
-
-#hardSkills ul li img{
-  width: 120px;
-  padding: 10px;
-}
-
-#hardSkills ul li span{
-  color: white;
-  font-size: 18px;
-  
-}
-
-
-#softSkills ul li{
+.logo img{
+  width: 20rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
 }
 
-#softSkills ul li img{
-  width: 120px;
-  padding: 10px;
-}
-
-#softSkills ul li span{
-  color: white;
-  font-size: 18px;
-  
-}
-
-/* Portfolio */
-
-#portfolio{
-  background-color: var(--bg-portifolio2);
+.social h2{
   display: flex;
-  flex-direction: column;
 }
 
-#portfolio img{
-  margin: 6rem auto;
-  width: 75%;
+.footerEnd p{
+  text-align: center;
+  padding: 6rem;
+
 }
