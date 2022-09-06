@@ -7,9 +7,10 @@
 }
 
 :root {
+  --hue: 23;
   --bg-body: hsl(225, 4%, 39%);
-  --bg-portifolio: hsl(180, 2%, 11%);
-  --bg-portifolio2: hsl(0, 0%, 8%);
+  --bg-portifolio: hsl(0, 0%, 8%);
+  --bg-portifolio2: hsl(220, 3%, 21%);
 
   font-size: 62.5%;
 }
@@ -31,7 +32,7 @@ ul li {
 
 .container{
   width: 32rem;
-  background: var(--bg-portifolio2);
+  background: var(--bg-portifolio);
 }
 
 svg path {
@@ -44,7 +45,26 @@ h2{
   margin: 5rem 3rem 3rem;
 }
 
+p{
+  color: #FFFFFF;
+}
 
+span{
+  font-size: 1.6rem;
+  color: #FFFFFF;
+}
+
+.divider-1 {
+  height: 0.2rem;
+
+  background: linear-gradient(270deg, hsla(var(--hue), 98%, 55%, 0.34) 0%, hsla(var(--hue), 98%, 55%, 1) 100%);
+}
+
+.divider-2 {
+  height: 0.2rem;
+
+  background: linear-gradient(270deg, hsla(var(--hue), 98%, 55%, 1) 0%, hsla(var(--hue), 98%, 55%, 0.35) 100%);
+}
 
 
 /*======= Profile =======*/
@@ -58,6 +78,10 @@ h2{
 }
 .headerNav nav{
   display: flex;
+}
+
+.active:hover path {
+  fill: #fd721c;
 }
 
 .logoSimple img{
@@ -99,7 +123,7 @@ nav ul {
 h4{
   color: #fd731e;
   font-size: 1.39rem;
-  margin: 0 3rem;
+  margin: 0 3rem 3rem;
 }
 
 h4 span{
@@ -110,38 +134,113 @@ h4 span{
 
 p{
   color: #FFFFFF;
-  margin: 3rem 3rem 8rem;
+  margin: 0 3rem;
 }
 
 
-/*======= Skills =======*/
+/*======= Main =======*/
 
 
-/*-------- containerSkills -------*/
+/* -=-=-=-=-= Skills =-=-=-=-=- */
 
-/*------------ HardSkills ---------*/
+.containerSkills{
+  width: 32rem;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.showMe {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.active, .skill:hover{
+  background-color: var(--bg-portifolio2);
+}
+
+.skill{
+  width: 16rem;
+  cursor: pointer;
+
+  padding: 3rem;
+  background-color: transparent;
+  border: 1px solid #fd731e;
+  border-radius: 1rem;
+
+  outline: none;
+  transition: 0.4s;
+}
+
+/*----------- HardSkills --------*/
 
 
+.hardSkills:hover{
+  background-color: var(--bg-portifolio2);
+}
 
 
+/*----------- SoftSkills --------*/
+
+.softSkills:hover{
+  background-color: var(--bg-portifolio2);
+}
+
+/* -=-=-=-=-= Portfolio =-=-=-=-=- */
+
+.portfolio{
+  width: 100%;
+  height: 50vh;
+}
+
+.buttonPortfolio{
+  width: 100%;
+
+  border: 1px solid #fd731e;
+  border-radius: 1rem;
+
+  padding: 3rem;
+}
 
 /*============= Footer ============*/
 .logo{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5rem;
 }
 .logo img{
   width: 20rem;
   display: flex;
+  padding-top: 5rem;
 }
 
 .social h2{
   display: flex;
 }
 
-.footerEnd p{
+.footerEnd h5{
   text-align: center;
   padding: 6rem;
-
+  color: #FFFFFF;
 }
+
+.socialLinks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.socialLinks ul{
+  display: flex;
+  gap: 2rem;
+
+  padding-top: 5rem;
+}
+
+.social .socialLinks svg{
+  width: 3rem;
+}
+
